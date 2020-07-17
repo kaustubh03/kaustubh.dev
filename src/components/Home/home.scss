@@ -5,7 +5,7 @@
     background: #151924;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #151924, #312a3a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #151924, #312a3a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
 }
 
 
@@ -213,4 +213,27 @@
             }
         }
     }
+}
+
+#mobileInfo{
+    display:none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #mobileInfo{
+        display: flex;
+         .siteTitle{
+            color: #fff;
+            font-size: 16px;
+            letter-spacing: 1.8px;
+            font-weight:500;
+            text-decoration: none;
+        }
+    }
+    .container{
+        display: none;
+    }
+
+
 }

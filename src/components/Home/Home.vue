@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div class="container">
       <Menu :infoMenuAction="infoMenuAction" :showInfoModal="showInfoModal" :activeApps="activeApps" :toggleVisibility="toggleVisibility"/>
       <DesktopArea :removeFromActiveMenu="removeFromActiveMenu" :toggledApp="toggledApp" :activeMenu="currentActiveMenu" :desktopItems="desktopItems" />
       <div class="galaxy">
@@ -30,6 +31,18 @@
             <span><a href="https://github.com/kaustubh03/kaustubh.dev">https://github.com/kaustubh03/kaustubh.dev</a></span>
           </div>
           <div class="exit" v-on:click="infoMenuAction">Exit</div>
+        </div>
+      </div>
+      </div>
+      <div id="mobileInfo">
+          <div class="galaxy">
+            <div class="stars">
+            </div>
+            <div class="authorInfo">
+              <span class='siteTitle'>Hey there! I'm still working on mobile device version concept. 
+                <br />
+                Till then please checkout desktop version.</span>
+              </div>
         </div>
       </div>
   </div>
