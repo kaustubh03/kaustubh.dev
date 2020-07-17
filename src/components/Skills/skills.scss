@@ -1,0 +1,97 @@
+$DarkPurple: #06062d;
+$White:#fff;
+$LWhite:#fafafa;
+$PaleWhite:#fafafa70;
+$Green:#4aba11;
+
+.skills{
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 47px);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    z-index: 99;
+    display:flex;
+    flex-direction: column;
+    .controlButtons{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+         svg{
+                width:25px;
+                height:25px;
+            }
+        .maximizeContainer{
+            
+            svg{
+                margin-left:5px;
+                margin-top:5px;
+            }
+        }
+
+        
+    }
+    .search{
+        padding: 30px;
+        input{
+            width: 300px;
+            height: 20px;
+            font-size: 20px;
+            background: #f4f2f270;
+            border: 1px solid #CCC;
+            color: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+            &::placeholder{
+                color:#fafafa;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        overflow:auto;
+        max-height:80%;
+        .skillsHolder{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-top: 100px;
+            padding-left:100px;
+            flex-wrap:wrap;
+            .skill{
+                width: 200px;
+                height: 150px;
+                background: transparent;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-right: 0px;
+                    margin-bottom:0px;
+                }
+                img{
+                    width:100px;
+                }
+                span{
+                    margin-top:5px;
+                }
+            }
+        }
+    }
+    
+}

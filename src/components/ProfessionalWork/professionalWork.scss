@@ -1,0 +1,159 @@
+$DarkPurple: #06062d;
+$White:#fff;
+$LWhite:#fafafa;
+$PaleWhite:#fafafa70;
+$Green:#4aba11;
+$GreySkin:#dddddd;
+$Blue:#0277ca;
+$Orange:#ca6702;
+$LGrey:#eaeaea;
+
+.professionalWorks{
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 47px);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    z-index: 99;
+    display:flex;
+    flex-direction: column;
+    .controlButtons{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        svg{
+                width:25px;
+                height:25px;
+            }
+        .maximizeContainer{
+            
+            svg{
+                margin-left:5px;
+                margin-top:5px;
+            }
+        }
+
+        
+    }
+    .search{
+        padding: 30px;
+        input{
+            width: 300px;
+            height: 20px;
+            font-size: 20px;
+            background: #f4f2f270;
+            border: 1px solid #CCC;
+            color: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+            &::placeholder{
+                color:#fafafa;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        overflow:auto;
+        max-height:80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        .projectItem{
+            margin:20px;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            cursor:pointer;
+            border-radius:5px;
+            img{
+                border-radius: 5px 5px 0px 0px;
+                width:350px;
+                height:200px;
+                 &:hover{
+                    width:360px;
+                    transition: transform 1s ease;
+                    transform: scale(1.5);
+                }
+            }
+            .title{
+                letter-spacing: 0.8px;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .subtitle{
+                letter-spacing: 0.5px;
+                font-size:14px;
+                color:$GreySkin;
+            }
+        }
+    }
+    .projectDetails{
+        display: flex;
+        flex-direction: column;
+        .imageSlider{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            padding: 0 21%;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .innerFlex{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .title{
+                    font-size:24px;
+                    margin-bottom:5px;
+                    letter-spacing: 0.8px;
+                    font-weight: 800;
+                }
+                .heading2{
+                    margin-top:5px;
+                    margin-bottom: 5px;
+                    font-weight: 900;
+                    color: $LGrey;
+                    letter-spacing: 0.5px;
+                }
+            }
+            
+            .subtitle{
+                margin-bottom: 5px;
+                font-size:14px;
+                color: $LGrey;
+                opacity:0.8;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
+            .description{
+                margin-bottom: 8px;
+                color: $LGrey;
+                letter-spacing: 0.8px;
+                font-weight: 400;
+            }
+            a{
+                text-decoration: underline;
+                color:$LGrey;
+                font-size:16px;
+                margin-top:5px;
+                letter-spacing: 1.8px;
+                text-align: right;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
