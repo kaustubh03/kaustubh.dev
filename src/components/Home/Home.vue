@@ -28,7 +28,7 @@
           </div>
           <div class="frame">
             <span>Github - </span>
-            <span><a href="https://github.com/kaustubh03/kaustubh.dev">https://github.com/kaustubh03/kaustubh.dev</a></span>
+            <span><a href="https://github.com/kaustubh03/kaustubh.dev">kaustubh03/kaustubh.dev</a></span>
           </div>
           <div class="exit" v-on:click="infoMenuAction">Exit</div>
         </div>

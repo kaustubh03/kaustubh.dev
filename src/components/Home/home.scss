@@ -235,7 +235,43 @@
     //     display: none;
     // }
     .authorInfo{
-        display:none;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 200px;
+            z-index: 999;
+            margin-bottom: 25px;
+            border: 0.5px solid #fafafa;
+            box-shadow: 1px 1px 11px 1px #7f7b7bd1;
+            margin-right: 5px;
+        }
+        .siteTitle{
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 2.8px;
+            text-decoration: overline;
+        }
+        .quote{
+            color: #fff;
+            margin-top: 7px;
+            margin-left: 130px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-align: right;
+        }
     }
 
+    .infoModal{
+        width:100%;
+        height:100%;
+        z-index: 9999;
+        border-radius:0px;
+        .container{
+            padding:65px;
+        }
+    }
 }
