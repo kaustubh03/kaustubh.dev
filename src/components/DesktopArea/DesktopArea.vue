@@ -31,7 +31,7 @@
           />
           <div class="workEx">
             <span>Paytm</span>
-            <span>June 2020 - Present</span>  
+            <span>June 2019 - Present</span>  
           </div>
         </timeline-item>
         <timeline-item font-color="#fff" bg-color="#fff"><img
