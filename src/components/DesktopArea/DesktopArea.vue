@@ -87,10 +87,15 @@ export default {
       desktopItemsArr:[],
       selectedItem:null,
       activeApps:[],
+      isMobile:false
     }
   },
   
    mounted() {
+     let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+     if(width<=768){
+       this.isMobile = true;
+     }
      this.desktopItemsArr = [...this.desktopItems];
   },
   computed: {
@@ -128,7 +133,11 @@ export default {
         }
       }
       else{
+        
         this.selectedItem = selected.id;
+        if(this.isMobile){
+          this.selectedClass(selected)
+        }
       }
     },
     minimize:function(selectedApp){

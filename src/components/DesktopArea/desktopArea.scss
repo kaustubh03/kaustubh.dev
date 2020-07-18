@@ -104,3 +104,12 @@ $Green:#4aba11;
     }
 
 }
+@media screen and (max-width: 768px)  and (max-height: 820px), (max-width:768px) {
+    .timeline-item{
+        margin-top:1.5em !important;
+    }
+    .timeline{
+        bottom: 15px;
+    }
+
+}
