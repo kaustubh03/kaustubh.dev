@@ -24,6 +24,11 @@ $Green:#4aba11;
     }
     .container{
         z-index:1;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
         .desktopItems{
             z-index: 1;
             display: flex;
@@ -32,7 +37,7 @@ $Green:#4aba11;
             font-weight:500;
             align-items: center;
             justify-content: center;
-            margin-bottom: 70%;
+            margin-bottom: 55%;
             z-index: 1;
             img{
                 padding: 10px;
@@ -88,4 +93,12 @@ $Green:#4aba11;
 
  .icon{
     width: 30px;
+}
+
+@media screen and (max-height: 768px) {
+.timeline-item{
+    margin-top:1.5em !important;
+}
+
+
 }
