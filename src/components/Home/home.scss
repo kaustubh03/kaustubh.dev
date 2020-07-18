@@ -221,19 +221,21 @@
 
 
 @media screen and (max-width: 768px) {
-    #mobileInfo{
-        display: flex;
-         .siteTitle{
-            color: #fff;
-            font-size: 16px;
-            letter-spacing: 1.8px;
-            font-weight:500;
-            text-decoration: none;
-        }
+    // #mobileInfo{
+    //     display: flex;
+    //      .siteTitle{
+    //         color: #fff;
+    //         font-size: 16px;
+    //         letter-spacing: 1.8px;
+    //         font-weight:500;
+    //         text-decoration: none;
+    //     }
+    // }
+    // .container{
+    //     display: none;
+    // }
+    .authorInfo{
+        display:none;
     }
-    .container{
-        display: none;
-    }
-
 
 }

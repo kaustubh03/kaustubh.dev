@@ -96,9 +96,11 @@ $Green:#4aba11;
 }
 
 @media screen and (max-height: 768px) {
-.timeline-item{
-    margin-top:1.5em !important;
-}
-
+    .timeline-item{
+        margin-top:1.5em !important;
+    }
+    .timeline{
+        bottom: 0;
+    }
 
 }

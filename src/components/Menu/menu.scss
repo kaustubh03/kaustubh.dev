@@ -53,3 +53,9 @@ $White:#fff;
         padding:0px 10px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .infoTab{
+        display:none;
+    }
+}

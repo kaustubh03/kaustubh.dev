@@ -67,7 +67,7 @@ $Green:#4aba11;
             justify-content: center;
             align-content: center;
             padding-top: 100px;
-            padding-left:100px;
+            // padding-left:100px;
             flex-wrap:wrap;
             .skill{
                 width: 200px;
@@ -94,4 +94,15 @@ $Green:#4aba11;
         }
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    .skillsHolder{
+        align-content: flex-start !important;
+        padding-top:0px !important;
+    }
+    .search{
+        padding:0px !important;
+        margin-top:50px
+    }
 }

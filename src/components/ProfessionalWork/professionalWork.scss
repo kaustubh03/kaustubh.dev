@@ -157,3 +157,18 @@ $LGrey:#eaeaea;
         }
     }
 }
+
+@media screen and (max-width:768px){
+    .innerFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .search{
+        padding:0px !important;
+        margin-top:50px
+    }
+
+    .details{
+        padding: 0 0px !important;
+    }
+}
