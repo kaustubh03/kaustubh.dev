@@ -1,4 +1,4 @@
-# portfolio
+# kaustubh.dev
 
 ## Project setup
 ```
