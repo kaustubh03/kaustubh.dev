@@ -25,13 +25,23 @@
       <timeline>
         <timeline-title font-color="#fff"><span class="title">Work Experience</span></timeline-title>
         <timeline-item font-color="#fff" bg-color="#fff"><img
+              src="https://media.glassdoor.com/sqll/146914/economist-intelligence-unit-squarelogo-1528720137641.png"
+              class="icon-heart"
+              slot="others"
+          />
+          <div class="workEx">
+            <span>The EIU </span>
+            <span>August 2020 - Present</span>  
+          </div>
+        </timeline-item>
+        <timeline-item font-color="#fff" bg-color="#fff"><img
               src="https://cdn.iconscout.com/icon/free/png-256/paytm-226448.png"
               class="icon-heart"
               slot="others"
           />
           <div class="workEx">
             <span>Paytm</span>
-            <span>June 2019 - Present</span>  
+            <span>June 2019 - August 2020</span>  
           </div>
         </timeline-item>
         <timeline-item font-color="#fff" bg-color="#fff"><img
