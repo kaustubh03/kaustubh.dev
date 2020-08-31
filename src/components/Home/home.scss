@@ -180,6 +180,11 @@
         align-items: center;
         flex-direction: column;
         height: 100%;
+        .github-corners{
+            position: absolute;
+            right:0px;
+            top:0px;
+        }
         a{
             color:inherit;
             text-decoration: none;
@@ -268,7 +273,7 @@
     .infoModal{
         width:100%;
         height:100%;
-        z-index: 9999;
+        z-index: 99999;
         border-radius:0px;
         .container{
             padding:65px;

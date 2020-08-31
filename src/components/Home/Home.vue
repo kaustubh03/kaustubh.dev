@@ -14,6 +14,11 @@
       </div>
       <div v-if="showInfoModal" class="infoModal">
         <div class="container">
+          <div class="github-corners">
+            <a href="https://github.com/kaustubh03/kaustubh.dev">
+              <img src="https://diamond.kaustubh.dev/images//github-corner-right.svg" /> 
+            </a>
+          </div>
           <div class="frame">
             <span>Built By -</span>
             <span>Kaustubh Saxena</span>
@@ -24,11 +29,7 @@
           </div>
           <div class="frame">
             <span>What's Next - </span>
-            <span>Mobile support, Music, Realtime Notepad</span>
-          </div>
-          <div class="frame">
-            <span>Github - </span>
-            <span><a href="https://github.com/kaustubh03/kaustubh.dev">kaustubh03/kaustubh.dev</a></span>
+            <span>Music, Realtime Notepad</span>
           </div>
           <div class="exit" v-on:click="infoMenuAction">Exit</div>
         </div>

@@ -71,8 +71,8 @@
       </timeline>
     </div>
       <div class="workExp-mobile">
-        <img :src="workLogo" v-on:click="toggleWork" />
-        <span v-on:click="toggleWork">Work Experience</span>
+        <img :src="workLogo" />
+        <span>Work Experience</span>
         <div class="work-holder">
           <img
               src="https://media.glassdoor.com/sqll/146914/economist-intelligence-unit-squarelogo-1528720137641.png"
