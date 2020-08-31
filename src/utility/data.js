@@ -423,3 +423,9 @@ export const projectDetails = {
          },
        };
 
+export const workUrls = {
+  eiu:'https://www.eiu.com/',
+  paytm:'https://paytm.com',
+  lambdatest:'https://lambdatest.com',
+  etelligens:'https://etelligens.com',
+}

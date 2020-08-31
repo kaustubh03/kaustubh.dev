@@ -10,7 +10,7 @@ $Green:#4aba11;
     grid-column-gap: 9px;
     grid-auto-flow: row;
     color:$White;
-    padding:20px;
+    padding:10px;
     .overlay{
         position:fixed;
         width:100%;
@@ -68,8 +68,12 @@ $Green:#4aba11;
             font-size: 20px;
         }
         img{
-            margin-top: 5px;
+            margin-top: -5px;
             width: 28px;
+            border-radius: 40px;
+            background: #fff;
+            padding: 10px;
+            margin-left: -15px;
         }
     }
 }
@@ -95,21 +99,80 @@ $Green:#4aba11;
     width: 30px;
 }
 
-@media screen and (max-height: 768px) {
+.workExp-mobile{
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    right: 15px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 99999;
+    img{
+        width: 50px;
+        height: 50px;
+        margin-bottom:15px;
+    }
+    .work-holder{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top:10px;
+        .work-icon{
+            background: #fff;
+            border-radius:50px;
+            padding:1px;
+            width: 10%;
+            height: 10%;
+            margin-right: 2%;
+        }
+        .work-icon:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) 
+  and (orientation: portrait),
+  /* Iphone 5, 6 */
+  only screen 
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
     .timeline-item{
         margin-top:1.5em !important;
     }
     .timeline{
         bottom: 15px;
+        display: none !important;
     }
+    .workExp-mobile{
+        display: flex !important;
+    }
+  }
+// @media screen and (max-height: 768px) {
+//     .timeline-item{
+//         margin-top:1.5em !important;
+//     }
+//     .timeline{
+//         bottom: 15px;
+//         display: none !important;
+//     }
 
-}
-@media screen and (max-width: 768px)  and (max-height: 820px), (max-width:768px) {
-    .timeline-item{
-        margin-top:0.2em !important;
-    }
-    .timeline{
-        bottom: 15px;
-    }
+// }
+// @media screen and (max-width: 768px)  and (max-height: 820px), (max-width:768px) {
+//     .timeline-item{
+//         margin-top:0.2em !important;
+//     }
+//     .timeline{
+//         bottom: 15px;
+//         display: none;
+//     }
+//     .workExp-mobile{
+//         display: flex;
+//     }
 
-}
+// }

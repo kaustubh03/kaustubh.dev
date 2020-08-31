@@ -70,14 +70,47 @@
           
       </timeline>
     </div>
+      <div class="workExp-mobile">
+        <img :src="workLogo" v-on:click="toggleWork" />
+        <span v-on:click="toggleWork">Work Experience</span>
+        <div class="work-holder">
+          <img
+              src="https://media.glassdoor.com/sqll/146914/economist-intelligence-unit-squarelogo-1528720137641.png"
+              class="work-icon"
+              slot="others"
+              id="eiu"
+              v-on:click="gotoCompany"
+          /><img
+              src="https://cdn.iconscout.com/icon/free/png-256/paytm-226448.png"
+              class="work-icon"
+              slot="others"
+              id="paytm"
+              v-on:click="gotoCompany"
+          /><img
+              src="https://miro.medium.com/max/3150/1*4OYDg_KKndY__ks97MvLHw.png"
+              class="work-icon"
+              slot="others"
+              id="lambdatest"
+              v-on:click="gotoCompany"
+          /><img
+              src="https://media.glassdoor.com/sqll/2866689/etelligens-technologies-squarelogo-1582700164298.png"
+              class="work-icon"
+              slot="others"
+              id="etelligens"
+              v-on:click="gotoCompany"
+          />
+        </div>
+      </div>
   </div>
 </template>
 
 <script>
 import logo from "../../assets/logo.png";
+import workIcon from "../../assets/work.svg";
 import Skills from "../Skills/Skills.vue"; 
 import ProfessionalWork from "../ProfessionalWork/ProfessionalWork.vue"; 
 import { findInArray } from '../../utility/helper';
+import { workUrls } from "../../utility/data";
 import { Timeline, TimelineItem, TimelineTitle } from 'vue-cute-timeline'
 
 export default {
@@ -94,10 +127,12 @@ export default {
     return {
       currentDate: new Date().toDateString(),
       lambdatestAutomation:logo,
+      workLogo:workIcon,
       desktopItemsArr:[],
       selectedItem:null,
       activeApps:[],
-      isMobile:false
+      isMobile:false,
+      showWorkExperience:false
     }
   },
   
@@ -201,6 +236,9 @@ export default {
         this.selectedItem = null;
       } 
     },
+    gotoCompany:function(e){
+      window.open(workUrls[e.target.id],'_blank')
+    }
   },
   watch: {
     toggledApp: function (val) {
