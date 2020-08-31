@@ -226,12 +226,20 @@ export const sideProjects = [
       title: 'Slapster'
     },
     {
+      id: 'findMyDiamond',
+      title: 'Find My Diamond'
+    },
+    {
       id: 'meridian',
       title: 'Meridian'
     },
     {
       id: 'sked',
       title: 'Sked'
+    },
+    {
+      id:'radio',
+      title:'Old School Casette Player '
     },
     {
       id: 'duskAbode',
@@ -276,6 +284,15 @@ export const sideProjectDetails = {
       url:
         "https://meridian.epsilon.now.sh/",
     },
+  findMyDiamond: {
+    id: "findMyDiamond",
+    title: "Find My Diamond",
+    subtitle: "A Puzzle Game Demonstrating Use of Web components with Absolute Zero Frameworks.",
+      description: `Start the Game, Select the Level and Find My Diamond on the grid of Cubes. Built With Web Components`,
+      technology: "HTML, CSS, Javascript, Web Components",
+      url:
+        "https://diamond.kaustubh.dev/",
+    },
   slapster: {
     id: "slapster",
     title: "Slapster",
@@ -293,7 +310,16 @@ export const sideProjectDetails = {
     technology: "HTML, CSS, Javascript",
       url:
         "https://sked.epsilon.now.sh/",
-    },
+    },  
+  radio: {
+    id: "radio",
+    title: "Old School Cassette Player",
+    subtitle: "No SVG Radio Example on React/SASS",
+    description: `Unleash the power of HTML, SASS with No Use of SVGs to design the Frame.`,
+    technology: "React, HTML, SASS/SCSS, Javascript",
+      url:
+        "https://radio.kaustubh.dev/",
+    },  
   duskAbode: {
     id: "duskAbode",
     title: "Dusk-Abode",

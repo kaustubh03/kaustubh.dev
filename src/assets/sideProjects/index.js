@@ -19,6 +19,10 @@ import slapster_3 from "./slapster_3.png";
 import duskAbode_0 from "./duskAbode_0.png";
 import duskAbode_1 from "./duskAbode_1.png";
 import duskAbode_2 from "./duskAbode_2.png";
+import radio_0 from "./radio_0.png";
+import findMyDiamond_0 from "./findMyDiamond_0.png";
+import findMyDiamond_1 from "./findMyDiamond_1.png";
+import findMyDiamond_2 from "./findMyDiamond_2.png";
 
 export {
     amelia_0,
@@ -41,4 +45,8 @@ export {
     duskAbode_0,
     duskAbode_1,
     duskAbode_2,
+    radio_0,
+    findMyDiamond_0,
+    findMyDiamond_1,
+    findMyDiamond_2
 }
